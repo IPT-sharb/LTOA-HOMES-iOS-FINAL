@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F50EB9C7226832C90095FC14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9C6226832C90095FC14 /* AppDelegate.swift */; };
+		F50EB9C9226832C90095FC14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9C8226832C90095FC14 /* ViewController.swift */; };
+		F50EB9CC226832C90095FC14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50EB9CA226832C90095FC14 /* Main.storyboard */; };
+		F50EB9CE226832CB0095FC14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F50EB9CD226832CB0095FC14 /* Assets.xcassets */; };
+		F50EB9D1226832CB0095FC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50EB9CF226832CB0095FC14 /* LaunchScreen.storyboard */; };
+		F50EB9DC226832CB0095FC14 /* LTOA_HOMESTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9DB226832CB0095FC14 /* LTOA_HOMESTests.swift */; };
+		F50EB9E7226832CB0095FC14 /* LTOA_HOMESUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9E6226832CB0095FC14 /* LTOA_HOMESUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F50EB9D8226832CB0095FC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50EB9BB226832C90095FC14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50EB9C2226832C90095FC14;
+			remoteInfo = "LTOA-HOMES";
+		};
+		F50EB9E3226832CB0095FC14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F50EB9BB226832C90095FC14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F50EB9C2226832C90095FC14;
+			remoteInfo = "LTOA-HOMES";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F50EB9C3226832C90095FC14 /* LTOA-HOMES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LTOA-HOMES.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50EB9C6226832C90095FC14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F50EB9C8226832C90095FC14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F50EB9CB226832C90095FC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F50EB9CD226832CB0095FC14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F50EB9D0226832CB0095FC14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F50EB9D2226832CB0095FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50EB9D7226832CB0095FC14 /* LTOA-HOMESTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LTOA-HOMESTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50EB9DB226832CB0095FC14 /* LTOA_HOMESTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOA_HOMESTests.swift; sourceTree = "<group>"; };
+		F50EB9DD226832CB0095FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50EB9E2226832CB0095FC14 /* LTOA-HOMESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LTOA-HOMESUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F50EB9E6226832CB0095FC14 /* LTOA_HOMESUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOA_HOMESUITests.swift; sourceTree = "<group>"; };
+		F50EB9E8226832CB0095FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F50EB9C0226832C90095FC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50EB9D4226832CB0095FC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50EB9DF226832CB0095FC14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F50EB9BA226832C90095FC14 = {
+			isa = PBXGroup;
+			children = (
+				F50EB9C5226832C90095FC14 /* LTOA-HOMES */,
+				F50EB9DA226832CB0095FC14 /* LTOA-HOMESTests */,
+				F50EB9E5226832CB0095FC14 /* LTOA-HOMESUITests */,
+				F50EB9C4226832C90095FC14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F50EB9C4226832C90095FC14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F50EB9C3226832C90095FC14 /* LTOA-HOMES.app */,
+				F50EB9D7226832CB0095FC14 /* LTOA-HOMESTests.xctest */,
+				F50EB9E2226832CB0095FC14 /* LTOA-HOMESUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F50EB9C5226832C90095FC14 /* LTOA-HOMES */ = {
+			isa = PBXGroup;
+			children = (
+				F50EB9C6226832C90095FC14 /* AppDelegate.swift */,
+				F50EB9C8226832C90095FC14 /* ViewController.swift */,
+				F50EB9CA226832C90095FC14 /* Main.storyboard */,
+				F50EB9CD226832CB0095FC14 /* Assets.xcassets */,
+				F50EB9CF226832CB0095FC14 /* LaunchScreen.storyboard */,
+				F50EB9D2226832CB0095FC14 /* Info.plist */,
+			);
+			path = "LTOA-HOMES";
+			sourceTree = "<group>";
+		};
+		F50EB9DA226832CB0095FC14 /* LTOA-HOMESTests */ = {
+			isa = PBXGroup;
+			children = (
+				F50EB9DB226832CB0095FC14 /* LTOA_HOMESTests.swift */,
+				F50EB9DD226832CB0095FC14 /* Info.plist */,
+			);
+			path = "LTOA-HOMESTests";
+			sourceTree = "<group>";
+		};
+		F50EB9E5226832CB0095FC14 /* LTOA-HOMESUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F50EB9E6226832CB0095FC14 /* LTOA_HOMESUITests.swift */,
+				F50EB9E8226832CB0095FC14 /* Info.plist */,
+			);
+			path = "LTOA-HOMESUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F50EB9C2226832C90095FC14 /* LTOA-HOMES */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50EB9EB226832CB0095FC14 /* Build configuration list for PBXNativeTarget "LTOA-HOMES" */;
+			buildPhases = (
+				F50EB9BF226832C90095FC14 /* Sources */,
+				F50EB9C0226832C90095FC14 /* Frameworks */,
+				F50EB9C1226832C90095FC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LTOA-HOMES";
+			productName = "LTOA-HOMES";
+			productReference = F50EB9C3226832C90095FC14 /* LTOA-HOMES.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F50EB9D6226832CB0095FC14 /* LTOA-HOMESTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50EB9EE226832CB0095FC14 /* Build configuration list for PBXNativeTarget "LTOA-HOMESTests" */;
+			buildPhases = (
+				F50EB9D3226832CB0095FC14 /* Sources */,
+				F50EB9D4226832CB0095FC14 /* Frameworks */,
+				F50EB9D5226832CB0095FC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50EB9D9226832CB0095FC14 /* PBXTargetDependency */,
+			);
+			name = "LTOA-HOMESTests";
+			productName = "LTOA-HOMESTests";
+			productReference = F50EB9D7226832CB0095FC14 /* LTOA-HOMESTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F50EB9E1226832CB0095FC14 /* LTOA-HOMESUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F50EB9F1226832CB0095FC14 /* Build configuration list for PBXNativeTarget "LTOA-HOMESUITests" */;
+			buildPhases = (
+				F50EB9DE226832CB0095FC14 /* Sources */,
+				F50EB9DF226832CB0095FC14 /* Frameworks */,
+				F50EB9E0226832CB0095FC14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F50EB9E4226832CB0095FC14 /* PBXTargetDependency */,
+			);
+			name = "LTOA-HOMESUITests";
+			productName = "LTOA-HOMESUITests";
+			productReference = F50EB9E2226832CB0095FC14 /* LTOA-HOMESUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F50EB9BB226832C90095FC14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Stephen Harb";
+				TargetAttributes = {
+					F50EB9C2226832C90095FC14 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					F50EB9D6226832CB0095FC14 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = F50EB9C2226832C90095FC14;
+					};
+					F50EB9E1226832CB0095FC14 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = F50EB9C2226832C90095FC14;
+					};
+				};
+			};
+			buildConfigurationList = F50EB9BE226832C90095FC14 /* Build configuration list for PBXProject "LTOA-HOMES" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F50EB9BA226832C90095FC14;
+			productRefGroup = F50EB9C4226832C90095FC14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F50EB9C2226832C90095FC14 /* LTOA-HOMES */,
+				F50EB9D6226832CB0095FC14 /* LTOA-HOMESTests */,
+				F50EB9E1226832CB0095FC14 /* LTOA-HOMESUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F50EB9C1226832C90095FC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50EB9D1226832CB0095FC14 /* LaunchScreen.storyboard in Resources */,
+				F50EB9CE226832CB0095FC14 /* Assets.xcassets in Resources */,
+				F50EB9CC226832C90095FC14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50EB9D5226832CB0095FC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50EB9E0226832CB0095FC14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F50EB9BF226832C90095FC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50EB9C9226832C90095FC14 /* ViewController.swift in Sources */,
+				F50EB9C7226832C90095FC14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50EB9D3226832CB0095FC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50EB9DC226832CB0095FC14 /* LTOA_HOMESTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F50EB9DE226832CB0095FC14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F50EB9E7226832CB0095FC14 /* LTOA_HOMESUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F50EB9D9226832CB0095FC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50EB9C2226832C90095FC14 /* LTOA-HOMES */;
+			targetProxy = F50EB9D8226832CB0095FC14 /* PBXContainerItemProxy */;
+		};
+		F50EB9E4226832CB0095FC14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F50EB9C2226832C90095FC14 /* LTOA-HOMES */;
+			targetProxy = F50EB9E3226832CB0095FC14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F50EB9CA226832C90095FC14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50EB9CB226832C90095FC14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F50EB9CF226832CB0095FC14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F50EB9D0226832CB0095FC14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F50EB9E9226832CB0095FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F50EB9EA226832CB0095FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F50EB9EC226832CB0095FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y59L6BWXZ8;
+				INFOPLIST_FILE = "LTOA-HOMES/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IPT.LTOA-HOMES";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F50EB9ED226832CB0095FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y59L6BWXZ8;
+				INFOPLIST_FILE = "LTOA-HOMES/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IPT.LTOA-HOMES";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F50EB9EF226832CB0095FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y59L6BWXZ8;
+				INFOPLIST_FILE = "LTOA-HOMESTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IPT.LTOA-HOMESTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTOA-HOMES.app/LTOA-HOMES";
+			};
+			name = Debug;
+		};
+		F50EB9F0226832CB0095FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y59L6BWXZ8;
+				INFOPLIST_FILE = "LTOA-HOMESTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IPT.LTOA-HOMESTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LTOA-HOMES.app/LTOA-HOMES";
+			};
+			name = Release;
+		};
+		F50EB9F2226832CB0095FC14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y59L6BWXZ8;
+				INFOPLIST_FILE = "LTOA-HOMESUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IPT.LTOA-HOMESUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LTOA-HOMES";
+			};
+			name = Debug;
+		};
+		F50EB9F3226832CB0095FC14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y59L6BWXZ8;
+				INFOPLIST_FILE = "LTOA-HOMESUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "IPT.LTOA-HOMESUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "LTOA-HOMES";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F50EB9BE226832C90095FC14 /* Build configuration list for PBXProject "LTOA-HOMES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50EB9E9226832CB0095FC14 /* Debug */,
+				F50EB9EA226832CB0095FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50EB9EB226832CB0095FC14 /* Build configuration list for PBXNativeTarget "LTOA-HOMES" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50EB9EC226832CB0095FC14 /* Debug */,
+				F50EB9ED226832CB0095FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50EB9EE226832CB0095FC14 /* Build configuration list for PBXNativeTarget "LTOA-HOMESTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50EB9EF226832CB0095FC14 /* Debug */,
+				F50EB9F0226832CB0095FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F50EB9F1226832CB0095FC14 /* Build configuration list for PBXNativeTarget "LTOA-HOMESUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50EB9F2226832CB0095FC14 /* Debug */,
+				F50EB9F3226832CB0095FC14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F50EB9BB226832C90095FC14 /* Project object */;
+}
