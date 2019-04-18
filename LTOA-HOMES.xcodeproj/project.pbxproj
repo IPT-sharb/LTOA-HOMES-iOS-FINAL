@@ -14,6 +14,7 @@
 		F50EB9D1226832CB0095FC14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F50EB9CF226832CB0095FC14 /* LaunchScreen.storyboard */; };
 		F50EB9DC226832CB0095FC14 /* LTOA_HOMESTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9DB226832CB0095FC14 /* LTOA_HOMESTests.swift */; };
 		F50EB9E7226832CB0095FC14 /* LTOA_HOMESUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9E6226832CB0095FC14 /* LTOA_HOMESUITests.swift */; };
+		F50EB9F522683D950095FC14 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9F422683D950095FC14 /* ViewControllerMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F50EB9E2226832CB0095FC14 /* LTOA-HOMESUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LTOA-HOMESUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F50EB9E6226832CB0095FC14 /* LTOA_HOMESUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOA_HOMESUITests.swift; sourceTree = "<group>"; };
 		F50EB9E8226832CB0095FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F50EB9F422683D950095FC14 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F50EB9CD226832CB0095FC14 /* Assets.xcassets */,
 				F50EB9CF226832CB0095FC14 /* LaunchScreen.storyboard */,
 				F50EB9D2226832CB0095FC14 /* Info.plist */,
+				F50EB9F422683D950095FC14 /* ViewControllerMain.swift */,
 			);
 			path = "LTOA-HOMES";
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50EB9F522683D950095FC14 /* ViewControllerMain.swift in Sources */,
 				F50EB9C9226832C90095FC14 /* ViewController.swift in Sources */,
 				F50EB9C7226832C90095FC14 /* AppDelegate.swift in Sources */,
 			);
@@ -435,6 +439,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y59L6BWXZ8;
 				INFOPLIST_FILE = "LTOA-HOMES/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,6 +458,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y59L6BWXZ8;
 				INFOPLIST_FILE = "LTOA-HOMES/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
