@@ -145,6 +145,9 @@
                                 <state key="normal" title="Personal Information">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="personalInfoButton:" destination="noO-do-yAb" eventType="touchUpInside" id="AD9-NK-5aU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ce9-1m-E1L">
                                 <rect key="frame" x="66" y="263" width="242" height="81"/>
@@ -363,7 +366,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="r0c-kJ-Vzt"/>
         <segue reference="bBG-qT-aov"/>
-        <segue reference="gI1-c5-KbP"/>
+        <segue reference="9jb-R7-gTr"/>
     </inferredMetricsTieBreakers>
 </document>
