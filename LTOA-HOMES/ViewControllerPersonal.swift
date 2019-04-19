@@ -86,7 +86,7 @@ class ViewControllerPersonal: UIViewController, UITextFieldDelegate  {
             print("Error: cannot create JSON from Member data")
             return
         }
-        
+        //continue exec function
         exec(request: request, session: session)
         numberText.text = numberField.text
         numberField.text = nil

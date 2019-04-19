@@ -258,13 +258,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kym-WH-jyo">
-                                <rect key="frame" x="68" y="150" width="201" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a54-Ol-fM9">
                                 <rect key="frame" x="68" y="274" width="201" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -302,16 +295,6 @@
                                 </state>
                                 <connections>
                                     <action selector="homeButton:" destination="52i-Bn-TIM" eventType="touchUpInside" id="LRh-jy-4rG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCX-h7-fxE">
-                                <rect key="frame" x="292" y="150" width="53" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeName:" destination="52i-Bn-TIM" eventType="touchUpInside" id="RYl-Gx-8xy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gir-it-hNj">
@@ -354,7 +337,6 @@
                         <outlet property="emailField" destination="ogu-Z5-dkN" id="yZW-GG-HZp"/>
                         <outlet property="emailText" destination="m1E-aO-NxZ" id="t3W-ig-2i0"/>
                         <outlet property="memberNameText" destination="Cgi-Zx-wBL" id="9IW-lP-qee"/>
-                        <outlet property="nameField" destination="kym-WH-jyo" id="zr3-fJ-Qmp"/>
                         <outlet property="numberField" destination="UKP-Pu-1pv" id="BWv-In-hL6"/>
                         <outlet property="numberText" destination="XDd-6s-MP4" id="qm5-HG-7de"/>
                         <segue destination="noO-do-yAb" kind="presentation" identifier="personalToMain" id="bBG-qT-aov"/>
@@ -366,8 +348,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="r0c-kJ-Vzt"/>
         <segue reference="bBG-qT-aov"/>
-        <segue reference="9jb-R7-gTr"/>
+        <segue reference="gI1-c5-KbP"/>
     </inferredMetricsTieBreakers>
 </document>
