@@ -19,7 +19,7 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         print(Name)
         self.memberName.text = self.Name
     }
-    
+    //codeCommentRevision
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         self.view.endEditing(true)
