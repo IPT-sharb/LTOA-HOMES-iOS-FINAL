@@ -93,6 +93,7 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         
         if let ViewControllerGuests = segue.destination as? ViewControllerGuests {
             ViewControllerGuests.loginName = Name
+            ViewControllerGuests.address = Address
         }
         
         if let ViewControllerViolations = segue.destination as? ViewControllerViolations {

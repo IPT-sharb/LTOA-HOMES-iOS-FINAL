@@ -543,13 +543,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="miY-hG-a4D">
-                                <rect key="frame" x="67" y="103" width="240" height="410"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHH-6G-kBI">
                                 <rect key="frame" x="45" y="44" width="59" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -606,12 +599,17 @@
                                     <action selector="homeButton:" destination="52i-Bn-TIM" eventType="touchUpInside" id="iGr-X5-TkA"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fd7-Ww-hnG">
+                                <rect key="frame" x="67" y="112" width="240" height="401"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
-                        <outlet property="tableCells" destination="miY-hG-a4D" id="alK-88-GcJ"/>
+                        <outlet property="guestTableView" destination="fd7-Ww-hnG" id="cWX-UR-Je8"/>
                         <segue destination="noO-do-yAb" kind="presentation" identifier="guestToMain" id="rIs-sh-sep"/>
                         <segue destination="e6B-v8-4t4" kind="presentation" identifier="guestToRemoveGuest" id="Cfd-rC-MoX"/>
                         <segue destination="IzH-BK-SIz" kind="presentation" identifier="guestToAddGuest" id="34z-l2-MYD"/>
@@ -723,7 +721,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lMh-ZQ-bgq"/>
-        <segue reference="mVA-sq-1cB"/>
+        <segue reference="rIs-sh-sep"/>
+        <segue reference="TLW-rk-mWn"/>
     </inferredMetricsTieBreakers>
 </document>
