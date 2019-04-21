@@ -28,6 +28,7 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    
     @IBAction func personalInfoButton(_ sender: Any) {
         //self.performSegue(withIdentifier: "mainToPersonal" , sender: nil)
         var endpoint : String = "https://d1jq46p2xy7y8u.cloudfront.net/member/search"
@@ -51,6 +52,17 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         exec(request: request, session: session)
         self.performSegue(withIdentifier: "mainToPersonal" , sender: nil)
         
+    }
+    
+    @IBAction func guestsButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "mainToGuest" , sender: nil)
+        
+    }
+    @IBAction func violationsButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "mainToViolations" , sender: nil)
+    }
+    @IBAction func workOrdersButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "mainToWorkOrders" , sender: nil)
     }
     
     func exec(request: URLRequest, session: URLSession)
@@ -78,4 +90,18 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
             ViewControllerPersonal.email = Email
             ViewControllerPersonal.number = Number
         }
-    }}
+        
+        if let ViewControllerGuests = segue.destination as? ViewControllerGuests {
+            ViewControllerGuests.loginName = Name
+        }
+        
+        if let ViewControllerViolations = segue.destination as? ViewControllerViolations {
+            ViewControllerViolations.loginName = Name
+        }
+        
+        if let ViewControllerWorkOrders = segue.destination as? ViewControllerWorkOrders {
+            ViewControllerWorkOrders.loginName = Name
+        }
+    }
+    
+}
