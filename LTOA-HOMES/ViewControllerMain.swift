@@ -21,16 +21,15 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         print(Name)
         self.memberName.text = self.Name
+        callMemberSearch()
     }
-    //codeCommentRevision
+  
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         self.view.endEditing(true)
     }
     
-    
-    @IBAction func personalInfoButton(_ sender: Any) {
-        //self.performSegue(withIdentifier: "mainToPersonal" , sender: nil)
+    func callMemberSearch() {
         var endpoint : String = "https://d1jq46p2xy7y8u.cloudfront.net/member/search"
         let url = URL(string: endpoint)
         var request = URLRequest(url: url!)
@@ -50,6 +49,12 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         }
         
         exec(request: request, session: session)
+    }
+    
+    
+    @IBAction func personalInfoButton(_ sender: Any) {
+       
+        
         self.performSegue(withIdentifier: "mainToPersonal" , sender: nil)
         
     }

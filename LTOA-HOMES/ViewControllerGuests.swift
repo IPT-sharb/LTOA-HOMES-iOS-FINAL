@@ -14,6 +14,7 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
     var address: String?
     
     var guestList: [String] = []
+    var guestReasons: [String] = []
     
     @IBOutlet weak var guestTableView: UITableView!
     
@@ -23,6 +24,7 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
         guestTableView.reloadData()
         guestTableView.delegate = self
         guestTableView.dataSource = self
+        
         sendRequestGuestList()
         
     }
@@ -41,6 +43,13 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        
+        let alertController = UIAlertController(title: "Guest Reason: ", message:
+            guestReasons[(indexPath.row)], preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+        
+        self.present(alertController, animated: true, completion: nil)
+        
     }
     
     @IBAction func homeButton(_ sender: Any) {
@@ -79,9 +88,11 @@ func execGuest(request: URLRequest, session: URLSession)
         {
             let stringPass = element["guestName"] as? String
             let addresser = element["residentAddress"] as? String
+            let stringReason = element["reason"] as? String
             if(addresser == self.address )
             {
                 self.guestList.append(stringPass!)
+                self.guestReasons.append(stringReason!)
             }
         }
         
@@ -98,12 +109,15 @@ func execGuest(request: URLRequest, session: URLSession)
         }
         if let ViewControllerAddGuest = segue.destination as? ViewControllerAddGuest {
             ViewControllerAddGuest.loginName = loginName
+            ViewControllerAddGuest.address = address
         }
         if let ViewControllerRemoveGuest = segue.destination as? ViewControllerRemoveGuest {
             ViewControllerRemoveGuest.loginName = loginName
+            ViewControllerRemoveGuest.address = address
         }
         if let ViewControllerAddMultipleGuest = segue.destination as? ViewControllerAddMultipleGuest {
             ViewControllerAddMultipleGuest.loginName = loginName
+            ViewControllerAddMultipleGuest.address = address
         }
     }
     

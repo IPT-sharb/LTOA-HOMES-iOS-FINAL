@@ -113,7 +113,6 @@ class ViewControllerPersonal: UIViewController, UITextFieldDelegate  {
         exec(request: request, session: session)
         emailText.text = emailField.text
         emailField.text = nil
-        
     }
     
     func exec(request: URLRequest, session: URLSession)
