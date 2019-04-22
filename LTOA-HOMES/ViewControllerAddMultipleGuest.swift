@@ -22,10 +22,9 @@ class ViewControllerAddMultipleGuest: UIViewController, UITextFieldDelegate, UIT
         guestFullList.delegate = self
     }
     
-    @IBAction func addMultipleGuestHomeButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "addMultipleGuestToMain" , sender: nil)
+    @IBAction func multipleAddGuestHome(_ sender: Any) {
+        self.performSegue(withIdentifier: "addMultipleGuestsToMain" , sender: nil)
     }
-    
     
     func sendRequestGuestList()
     {

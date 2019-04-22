@@ -15,6 +15,15 @@
 		F50EB9DC226832CB0095FC14 /* LTOA_HOMESTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9DB226832CB0095FC14 /* LTOA_HOMESTests.swift */; };
 		F50EB9E7226832CB0095FC14 /* LTOA_HOMESUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9E6226832CB0095FC14 /* LTOA_HOMESUITests.swift */; };
 		F50EB9F522683D950095FC14 /* ViewControllerMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EB9F422683D950095FC14 /* ViewControllerMain.swift */; };
+		F55D60EE2269704B00BDFB4C /* ViewControllerPersonal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D60ED2269704B00BDFB4C /* ViewControllerPersonal.swift */; };
+		F58B98EF226A816F00651EEF /* ViewControllerGuests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B98EE226A816F00651EEF /* ViewControllerGuests.swift */; };
+		F58B98F1226C047900651EEF /* ViewControllerViolations.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B98F0226C047900651EEF /* ViewControllerViolations.swift */; };
+		F58B98F3226C048A00651EEF /* ViewControllerWorkOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B98F2226C048A00651EEF /* ViewControllerWorkOrders.swift */; };
+		F58B98F5226C093E00651EEF /* ViewControllerNewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B98F4226C093E00651EEF /* ViewControllerNewUser.swift */; };
+		F58B98F7226C0BC200651EEF /* ViewControllerAddGuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B98F6226C0BC200651EEF /* ViewControllerAddGuest.swift */; };
+		F58B98F9226C0BD400651EEF /* ViewControllerRemoveGuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B98F8226C0BD400651EEF /* ViewControllerRemoveGuest.swift */; };
+		F58B98FB226C0BED00651EEF /* ViewControllerAddMultipleGuest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58B98FA226C0BED00651EEF /* ViewControllerAddMultipleGuest.swift */; };
+		F5E8B26A226C35BB001756E1 /* ViewControllerSubmitWorkOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E8B269226C35BB001756E1 /* ViewControllerSubmitWorkOrder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		F50EB9E6226832CB0095FC14 /* LTOA_HOMESUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTOA_HOMESUITests.swift; sourceTree = "<group>"; };
 		F50EB9E8226832CB0095FC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F50EB9F422683D950095FC14 /* ViewControllerMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMain.swift; sourceTree = "<group>"; };
+		F55D60ED2269704B00BDFB4C /* ViewControllerPersonal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPersonal.swift; sourceTree = "<group>"; };
+		F58B98EE226A816F00651EEF /* ViewControllerGuests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerGuests.swift; sourceTree = "<group>"; };
+		F58B98F0226C047900651EEF /* ViewControllerViolations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerViolations.swift; sourceTree = "<group>"; };
+		F58B98F2226C048A00651EEF /* ViewControllerWorkOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerWorkOrders.swift; sourceTree = "<group>"; };
+		F58B98F4226C093E00651EEF /* ViewControllerNewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNewUser.swift; sourceTree = "<group>"; };
+		F58B98F6226C0BC200651EEF /* ViewControllerAddGuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAddGuest.swift; sourceTree = "<group>"; };
+		F58B98F8226C0BD400651EEF /* ViewControllerRemoveGuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRemoveGuest.swift; sourceTree = "<group>"; };
+		F58B98FA226C0BED00651EEF /* ViewControllerAddMultipleGuest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAddMultipleGuest.swift; sourceTree = "<group>"; };
+		F5E8B269226C35BB001756E1 /* ViewControllerSubmitWorkOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSubmitWorkOrder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,15 @@
 				F50EB9CF226832CB0095FC14 /* LaunchScreen.storyboard */,
 				F50EB9D2226832CB0095FC14 /* Info.plist */,
 				F50EB9F422683D950095FC14 /* ViewControllerMain.swift */,
+				F55D60ED2269704B00BDFB4C /* ViewControllerPersonal.swift */,
+				F58B98EE226A816F00651EEF /* ViewControllerGuests.swift */,
+				F58B98F0226C047900651EEF /* ViewControllerViolations.swift */,
+				F58B98F2226C048A00651EEF /* ViewControllerWorkOrders.swift */,
+				F58B98F4226C093E00651EEF /* ViewControllerNewUser.swift */,
+				F58B98F6226C0BC200651EEF /* ViewControllerAddGuest.swift */,
+				F58B98F8226C0BD400651EEF /* ViewControllerRemoveGuest.swift */,
+				F58B98FA226C0BED00651EEF /* ViewControllerAddMultipleGuest.swift */,
+				F5E8B269226C35BB001756E1 /* ViewControllerSubmitWorkOrder.swift */,
 			);
 			path = "LTOA-HOMES";
 			sourceTree = "<group>";
@@ -259,9 +286,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F58B98F3226C048A00651EEF /* ViewControllerWorkOrders.swift in Sources */,
+				F58B98EF226A816F00651EEF /* ViewControllerGuests.swift in Sources */,
 				F50EB9F522683D950095FC14 /* ViewControllerMain.swift in Sources */,
+				F58B98FB226C0BED00651EEF /* ViewControllerAddMultipleGuest.swift in Sources */,
+				F5E8B26A226C35BB001756E1 /* ViewControllerSubmitWorkOrder.swift in Sources */,
 				F50EB9C9226832C90095FC14 /* ViewController.swift in Sources */,
+				F58B98F7226C0BC200651EEF /* ViewControllerAddGuest.swift in Sources */,
+				F55D60EE2269704B00BDFB4C /* ViewControllerPersonal.swift in Sources */,
+				F58B98F1226C047900651EEF /* ViewControllerViolations.swift in Sources */,
+				F58B98F5226C093E00651EEF /* ViewControllerNewUser.swift in Sources */,
 				F50EB9C7226832C90095FC14 /* AppDelegate.swift in Sources */,
+				F58B98F9226C0BD400651EEF /* ViewControllerRemoveGuest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

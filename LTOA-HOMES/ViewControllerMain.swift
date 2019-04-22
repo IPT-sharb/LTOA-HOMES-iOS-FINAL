@@ -103,10 +103,12 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         
         if let ViewControllerViolations = segue.destination as? ViewControllerViolations {
             ViewControllerViolations.loginName = Name
+            ViewControllerViolations.address = Address
         }
         
         if let ViewControllerWorkOrders = segue.destination as? ViewControllerWorkOrders {
             ViewControllerWorkOrders.loginName = Name
+            ViewControllerWorkOrders.address = Address
         }
     }
     
