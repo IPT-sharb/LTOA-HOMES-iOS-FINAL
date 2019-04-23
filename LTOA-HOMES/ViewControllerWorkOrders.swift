@@ -101,8 +101,16 @@ class ViewControllerWorkOrders: UIViewController, UITableViewDelegate, UITableVi
         self.performSegue(withIdentifier: "workOrdersToMain" , sender: nil)
     }
     
+    @IBAction func submitGoButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "workOrderToSubmitWorkOrder" , sender: nil)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let ViewControllerMain = segue.destination as? ViewControllerMain {
             ViewControllerMain.Name = loginName
-        }}
+        }
+        if let ViewControllerSubmitWorkOrder = segue.destination as? ViewControllerSubmitWorkOrder {
+            ViewControllerSubmitWorkOrder.loginName = loginName
+            ViewControllerSubmitWorkOrder.loginName = loginName
+        }
+    }
 }
