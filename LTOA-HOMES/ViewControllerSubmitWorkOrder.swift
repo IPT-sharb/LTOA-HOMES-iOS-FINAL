@@ -60,7 +60,7 @@ class ViewControllerSubmitWorkOrder: UIViewController, UITextFieldDelegate,UIPic
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/text; charset=utf-8", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
-        let loginData: [String?: Any] = ["workType": "testType", "ResponsibleManager": "Paul/Leslie", "Status": "pending", "Notes": notesText.text, "Address": self.address]
+        let loginData: [String?: Any] = ["workType": pickedValue, "ResponsibleManager": "Paul/Leslie", "Status": "pending", "Notes": notesText.text, "Address": self.address]
         let loginJson: Data
         do {
             loginJson = try JSONSerialization.data(withJSONObject: loginData, options: [])

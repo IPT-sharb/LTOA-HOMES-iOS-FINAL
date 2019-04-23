@@ -12,7 +12,12 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
     
     var loginName: String?
     var address: String?
-
+    @IBOutlet weak var allowTime: UIDatePicker!
+    
+    @IBOutlet weak var allowEndTime: UIDatePicker!
+    
+    @IBOutlet weak var permanentGuest: UISwitch!
+    
     @IBOutlet weak var guestNameText: UITextField!
     
     @IBOutlet weak var guestReasonText: UITextField!
