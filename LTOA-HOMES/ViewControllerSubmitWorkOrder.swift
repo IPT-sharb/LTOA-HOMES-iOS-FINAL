@@ -25,6 +25,7 @@ class ViewControllerSubmitWorkOrder: UIViewController, UITextFieldDelegate,UIPic
         
         pickerView.dataSource = self
         pickerView.delegate = self
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     @IBAction func homeButton(_ sender: Any) {

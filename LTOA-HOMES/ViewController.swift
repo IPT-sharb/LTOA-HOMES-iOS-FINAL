@@ -24,7 +24,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         usernameTextField.delegate = self
         passwordTextField.delegate = self
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
         self.passwordTextField.isSecureTextEntry = true
         
     }

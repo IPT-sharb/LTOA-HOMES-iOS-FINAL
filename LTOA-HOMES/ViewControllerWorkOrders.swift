@@ -28,7 +28,7 @@ class ViewControllerWorkOrders: UIViewController, UITableViewDelegate, UITableVi
         tableCells.dataSource = self
         
         sendRequestWorkOrderList()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -16,6 +16,7 @@ class ViewControllerRemoveGuest: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     @IBAction func homeRemoveGuest(_ sender: Any) {   self.performSegue(withIdentifier: "removeGuestToMain" , sender: nil)    

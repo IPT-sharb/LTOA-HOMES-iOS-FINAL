@@ -29,6 +29,7 @@ class ViewControllerViolations: UIViewController, UITableViewDelegate, UITableVi
         violationsTable.dataSource = self
         
         sendRequestViolationList()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

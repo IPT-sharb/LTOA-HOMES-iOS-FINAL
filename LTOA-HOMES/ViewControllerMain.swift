@@ -22,6 +22,7 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         print(Name)
         self.memberName.text = self.Name
         callMemberSearch()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
   
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -70,6 +71,9 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         self.performSegue(withIdentifier: "mainToWorkOrders" , sender: nil)
     }
     
+    @IBAction func specialMoveButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "homeToSpecial" , sender: nil)
+    }
     func exec(request: URLRequest, session: URLSession)
     {
         let sem = DispatchSemaphore.init(value: 0)
@@ -109,6 +113,11 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         if let ViewControllerWorkOrders = segue.destination as? ViewControllerWorkOrders {
             ViewControllerWorkOrders.loginName = Name
             ViewControllerWorkOrders.address = Address
+        }
+        
+        if let ViewControllerSpecialInstructions = segue.destination as? ViewControllerSpecialInstructions {
+            ViewControllerSpecialInstructions.loginName = Name
+            ViewControllerSpecialInstructions.address = Address
         }
     }
     

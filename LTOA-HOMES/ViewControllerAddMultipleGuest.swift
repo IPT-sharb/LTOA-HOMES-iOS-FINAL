@@ -20,6 +20,7 @@ class ViewControllerAddMultipleGuest: UIViewController, UITextFieldDelegate, UIT
         super.viewDidLoad()
         guestFullList.text = ""
         guestFullList.delegate = self
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     @IBAction func multipleAddGuestHome(_ sender: Any) {

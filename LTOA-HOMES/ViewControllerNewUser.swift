@@ -38,6 +38,7 @@ class ViewControllerNewUser: UIViewController, UITextFieldDelegate {
         self.memberConfirmPasswordText.isSecureTextEntry = true
         
         confirmPasswordCheckLabel.text = " "
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     @IBAction func newUserSubmitButton(_ sender: Any) {

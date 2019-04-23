@@ -34,7 +34,8 @@ class ViewControllerPersonal: UIViewController, UITextFieldDelegate  {
         memberNameText.text = loginName
         addressText.text = address
         numberText.text = number
-        emailText.text = email 
+        emailText.text = email
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)

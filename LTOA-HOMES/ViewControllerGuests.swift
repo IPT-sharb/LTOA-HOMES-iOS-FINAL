@@ -26,7 +26,7 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
         guestTableView.dataSource = self
         
         sendRequestGuestList()
-        
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -22,6 +22,7 @@ class ViewControllerSpecialInstructions: UIViewController, UITextFieldDelegate, 
         specialInstructionsStaticText.text = ""
         specialInstructionsStaticText.delegate = self
         searchSpecialInstructions()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
     @IBAction func homeFromSpecialInstructions(_ sender: Any) {
