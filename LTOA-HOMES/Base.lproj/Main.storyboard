@@ -199,10 +199,10 @@
             </objects>
             <point key="canvasLocation" x="873.1884057971015" y="95.424107142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller New User-->
         <scene sceneID="VSo-5r-Qle">
             <objects>
-                <viewController id="dHM-0m-mnh" sceneMemberID="viewController">
+                <viewController id="dHM-0m-mnh" customClass="ViewControllerNewUser" customModule="LTOA_HOMES" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="W9A-0C-kXx"/>
                         <viewControllerLayoutGuide type="bottom" id="Xaa-w8-LZg"/>
@@ -223,42 +223,35 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYL-yk-7rX">
-                                <rect key="frame" x="43" y="192" width="131" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member Name(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iug-xi-erh">
-                                <rect key="frame" x="41" y="125" width="134" height="21"/>
+                                <rect key="frame" x="35" y="192" width="131" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER8-Ag-QP8">
-                                <rect key="frame" x="41" y="271" width="115" height="21"/>
+                                <rect key="frame" x="35" y="271" width="115" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWz-Jf-ejT">
-                                <rect key="frame" x="43" y="431" width="79" height="21"/>
+                                <rect key="frame" x="35" y="431" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txs-72-OB2">
-                                <rect key="frame" x="41" y="356" width="41" height="21"/>
+                                <rect key="frame" x="35" y="356" width="41" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8p-sC-64R">
-                                <rect key="frame" x="41" y="498" width="74" height="21"/>
+                                <rect key="frame" x="35" y="498" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -271,6 +264,9 @@
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="newUserSubmitButton:" destination="dHM-0m-mnh" eventType="touchUpInside" id="OTz-LJ-eBx"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tc1-Pi-oTX">
                                 <rect key="frame" x="41" y="154" width="293" height="30"/>
@@ -315,24 +311,46 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3jG-P9-NuL">
-                                <rect key="frame" x="41" y="565" width="140" height="21"/>
+                                <rect key="frame" x="35" y="565" width="140" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oby-hV-Bqk">
-                                <rect key="frame" x="43" y="594" width="293" height="30"/>
+                                <rect key="frame" x="35" y="594" width="293" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Password Check!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GS6-JI-Q8a">
+                                <rect key="frame" x="43" y="633" width="293" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member Name(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iug-xi-erh">
+                                <rect key="frame" x="35" y="125" width="134" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
+                        <outlet property="confirmPasswordCheckLabel" destination="GS6-JI-Q8a" id="X9U-rb-Pxt"/>
+                        <outlet property="memberAddressText" destination="zn0-gx-hxe" id="BiS-W9-Icr"/>
+                        <outlet property="memberConfirmPasswordText" destination="oby-hV-Bqk" id="cMo-pp-amA"/>
+                        <outlet property="memberEmailText" destination="i1K-1n-zmj" id="2Bj-1d-wxr"/>
+                        <outlet property="memberNameText" destination="tc1-Pi-oTX" id="lNF-68-4Lf"/>
+                        <outlet property="memberNumberText" destination="kjh-cI-jzX" id="LSX-BD-iLC"/>
+                        <outlet property="memberPasswordText" destination="wOP-y9-654" id="4s6-vk-fQO"/>
+                        <outlet property="memberUserNameText" destination="0uQ-fE-YPL" id="xCd-sU-7Fs"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="submitNewUser" id="mOR-5X-Ja9"/>
                     </connections>
                 </viewController>
@@ -1105,9 +1123,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="r2Z-vr-LhV"/>
+        <segue reference="Nrr-ul-hdr"/>
         <segue reference="ALf-6m-nTb"/>
-        <segue reference="Bf9-de-9Zc"/>
+        <segue reference="lMh-ZQ-bgq"/>
         <segue reference="mOR-5X-Ja9"/>
     </inferredMetricsTieBreakers>
 </document>

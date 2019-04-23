@@ -110,7 +110,7 @@ class ViewControllerWorkOrders: UIViewController, UITableViewDelegate, UITableVi
         }
         if let ViewControllerSubmitWorkOrder = segue.destination as? ViewControllerSubmitWorkOrder {
             ViewControllerSubmitWorkOrder.loginName = loginName
-            ViewControllerSubmitWorkOrder.loginName = loginName
+            ViewControllerSubmitWorkOrder.address = address
         }
     }
 }

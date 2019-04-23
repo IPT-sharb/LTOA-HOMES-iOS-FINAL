@@ -93,6 +93,6 @@ class ViewControllerSubmitWorkOrder: UIViewController, UITextFieldDelegate,UIPic
         }
         if let ViewControllerWorkOrders = segue.destination as? ViewControllerWorkOrders {
             ViewControllerWorkOrders.loginName = loginName
-            ViewControllerWorkOrders.loginName = loginName
+            ViewControllerWorkOrders.address = address
         }
     }}
