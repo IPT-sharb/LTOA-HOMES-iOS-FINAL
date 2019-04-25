@@ -12,6 +12,7 @@ class ViewControllerSpecialInstructions: UIViewController, UITextFieldDelegate, 
     
     var loginName: String?
     var address: String?
+    var special: String?
     
     @IBOutlet weak var specialInstructionsStaticText: UITextView!
     
@@ -19,10 +20,17 @@ class ViewControllerSpecialInstructions: UIViewController, UITextFieldDelegate, 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        specialInstructionsStaticText.text = ""
+        specialInstructionsStaticText.isEditable = false
+        editSpecialInstructions.text = nil
         specialInstructionsStaticText.delegate = self
         searchSpecialInstructions()
+        specialInstructionsStaticText.text = special
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
     }
     
     @IBAction func homeFromSpecialInstructions(_ sender: Any) {
@@ -33,13 +41,9 @@ class ViewControllerSpecialInstructions: UIViewController, UITextFieldDelegate, 
     {
         let sem = DispatchSemaphore.init(value: 0)
         let task = session.dataTask(with: request, completionHandler: {(data: Data?, response: URLResponse?, error: Error?) in
-            let json = try? JSONSerialization.jsonObject(with: (data ?? nil)!, options: []) as! [[String: AnyObject]]
-            for(index, element) in (json?.enumerated())!
-            {
-                let stringPass = element["specialInstructions"] as? String
-                self.specialInstructionsStaticText.text = stringPass
-                self.editSpecialInstructions.text = nil
-            }
+            let json = try? JSONSerialization.jsonObject(with: (data ?? nil)!, options: []) as! [String: AnyObject]
+            let stringPass = json?["specialInstructions"] as? String
+            self.special = stringPass
             sem.signal()
         }
         )
@@ -57,7 +61,7 @@ class ViewControllerSpecialInstructions: UIViewController, UITextFieldDelegate, 
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/text; charset=utf-8", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
-        let loginData: [String?: Any] = ["memberAddress": self.address]
+        let loginData: [String?: Any] = ["Address": self.address]
         let loginJson: Data
         do {
             loginJson = try JSONSerialization.data(withJSONObject: loginData, options: [])

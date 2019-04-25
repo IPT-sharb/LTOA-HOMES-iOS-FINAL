@@ -20,6 +20,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     var loginName: String?
     
+    var loginAddress: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameTextField.delegate = self
@@ -83,11 +85,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let jsonBodyAuth = json?["Auth"] as? String
             let jsonBodyLevel = json?["userLevel"] as? String
             let jsonBodyMember = json?["memberName"] as? String
+            let jsonBodyAddress = json?["memberAddress"] as? String
             self.loginReturn = jsonBodyAuth
             self.loginLevel = jsonBodyLevel
             self.loginName = jsonBodyMember
+            self.loginAddress = jsonBodyAddress
             print(self.loginLevel)
             print(self.loginName)
+            print(self.loginAddress)
             sem.signal()
         }
         )
@@ -104,6 +109,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(loginName)            //viewControllerTwo.success = loginReturn
             //viewControllerTwo.user = self.userName.tex
             ViewControllerMain.Name = loginName
+            ViewControllerMain.Address = loginAddress
         }
     }
 }

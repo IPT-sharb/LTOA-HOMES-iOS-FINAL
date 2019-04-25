@@ -176,7 +176,6 @@
                                     <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="guestsButton:" destination="noO-do-yAb" eventType="touchUpInside" id="LYp-Kh-0z6"/>
                                     <action selector="specialMoveButton:" destination="noO-do-yAb" eventType="touchUpInside" id="kCf-Ue-jXE"/>
                                 </connections>
                             </button>
@@ -640,7 +639,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdo-z7-B3w">
-                                <rect key="frame" x="68" y="216" width="131" height="21"/>
+                                <rect key="frame" x="68" y="180" width="131" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -678,13 +677,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbE-uK-xac">
-                                <rect key="frame" x="69" y="245" width="158" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Number Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDd-6s-MP4">
                                 <rect key="frame" x="69" y="371" width="157" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -692,13 +684,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a54-Ol-fM9">
-                                <rect key="frame" x="68" y="274" width="201" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UKP-Pu-1pv">
                                 <rect key="frame" x="68" y="400" width="201" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -731,16 +716,6 @@
                                     <action selector="homeButton:" destination="52i-Bn-TIM" eventType="touchUpInside" id="LRh-jy-4rG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gir-it-hNj">
-                                <rect key="frame" x="292" y="274" width="53" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="changeAddress:" destination="52i-Bn-TIM" eventType="touchUpInside" id="Ttx-Cy-lIK"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ui7-hf-EyF">
                                 <rect key="frame" x="292" y="516" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -761,12 +736,18 @@
                                     <action selector="changeNuber:" destination="52i-Bn-TIM" eventType="touchUpInside" id="S3S-Fe-OQP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address Placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbE-uK-xac">
+                                <rect key="frame" x="69" y="209" width="158" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
-                        <outlet property="addressField" destination="a54-Ol-fM9" id="rpj-9O-13u"/>
                         <outlet property="addressText" destination="nbE-uK-xac" id="hgg-vw-Uq4"/>
                         <outlet property="emailField" destination="ogu-Z5-dkN" id="yZW-GG-HZp"/>
                         <outlet property="emailText" destination="m1E-aO-NxZ" id="t3W-ig-2i0"/>
@@ -1128,7 +1109,6 @@
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="editSpecialInstructions" destination="LCB-1f-XrP" id="Vnd-cG-s1U"/>
-                        <outlet property="specialInstructionsHome" destination="agJ-LA-atc" id="LKy-ru-PTf"/>
                         <outlet property="specialInstructionsStaticText" destination="ihI-Is-Ru0" id="vkW-RJ-HWr"/>
                         <segue destination="noO-do-yAb" kind="presentation" identifier="specialInstructionsHome" id="ZgN-xa-FSH"/>
                         <segue destination="noO-do-yAb" kind="presentation" identifier="submitSpecialInstructions" id="GAH-CE-mvg"/>
@@ -1278,9 +1258,9 @@
         <image name="LTOA-logo-small" width="250" height="142"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DX7-ja-Ea5"/>
+        <segue reference="YZD-fn-pch"/>
         <segue reference="rGK-R4-1Kj"/>
-        <segue reference="ZgN-xa-FSH"/>
-        <segue reference="oJy-0N-wde"/>
+        <segue reference="bBG-qT-aov"/>
+        <segue reference="gI1-c5-KbP"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -31,6 +31,11 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func homeAddGuest(_ sender: Any) {
         self.performSegue(withIdentifier: "addGuestToMain" , sender: nil)
     }

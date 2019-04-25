@@ -37,8 +37,15 @@ class ViewControllerNewUser: UIViewController, UITextFieldDelegate {
         self.memberPasswordText.isSecureTextEntry = true
         self.memberConfirmPasswordText.isSecureTextEntry = true
         
+        self.memberAddressText.autocapitalizationType = UITextAutocapitalizationType.allCharacters
+        
         confirmPasswordCheckLabel.text = " "
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
     }
     
     @IBAction func newUserSubmitButton(_ sender: Any) {
@@ -56,7 +63,7 @@ class ViewControllerNewUser: UIViewController, UITextFieldDelegate {
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/text; charset=utf-8", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
-        let loginData: [String?: Any] = ["Name": self.memberNameText.text, "userLevel": "resident", "userName": self.memberUserNameText, "Password": self.memberPasswordText.text]
+            let loginData: [String?: Any] = ["Name": self.memberNameText.text, "userLevel": "resident", "userName": self.memberUserNameText.text, "Password": self.memberPasswordText.text, "Address": memberAddressText.text]
         let loginJson: Data
         do {
             loginJson = try JSONSerialization.data(withJSONObject: loginData, options: [])
@@ -82,7 +89,7 @@ class ViewControllerNewUser: UIViewController, UITextFieldDelegate {
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/text; charset=utf-8", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
-        let loginData: [String?: Any] = ["contactNumber": self.memberNumberText.text, "email": self.memberEmailText.text]
+        let loginData: [String?: Any] = ["memberAddress": self.memberAddressText.text, "contactNumber": self.memberNumberText.text, "email": self.memberEmailText.text]
         let loginJson: Data
         do {
             loginJson = try JSONSerialization.data(withJSONObject: loginData, options: [])

@@ -39,7 +39,7 @@ class ViewControllerMain: UIViewController, UITextFieldDelegate {
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
-        let loginData: [String?: Any] = ["memberName": Name]
+        let loginData: [String?: Any] = ["memberAddress": Address]
         let loginJson: Data
         do {
             loginJson = try JSONSerialization.data(withJSONObject: loginData, options: [])

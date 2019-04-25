@@ -19,6 +19,11 @@ class ViewControllerRemoveGuest: UIViewController, UITextFieldDelegate {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func homeRemoveGuest(_ sender: Any) {   self.performSegue(withIdentifier: "removeGuestToMain" , sender: nil)    
     }
     

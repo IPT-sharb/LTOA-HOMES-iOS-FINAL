@@ -15,7 +15,6 @@ class ViewControllerPersonal: UIViewController, UITextFieldDelegate  {
     @IBOutlet weak var numberText: UILabel!
     @IBOutlet weak var emailText: UILabel!
     @IBOutlet weak var nameField: UITextField!
-    @IBOutlet weak var addressField: UITextField!
     @IBOutlet weak var numberField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     
@@ -27,7 +26,6 @@ class ViewControllerPersonal: UIViewController, UITextFieldDelegate  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addressField.delegate = self
         numberField.delegate = self
         emailField.delegate = self
         
@@ -46,29 +44,6 @@ class ViewControllerPersonal: UIViewController, UITextFieldDelegate  {
         self.performSegue(withIdentifier: "personalToMain" , sender: nil)
     }
 
-    @IBAction func changeAddress(_ sender: Any) {
-        var endpoint : String = "https://d1jq46p2xy7y8u.cloudfront.net/member/update"
-        let url = URL(string: endpoint)
-        var request = URLRequest(url: url!)
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
-        request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
-        request.httpMethod = "POST"
-        let loginData: [String?: Any] = ["memberName": loginName, "memberAddress": addressField.text]
-        let loginJson: Data
-        do {
-            loginJson = try JSONSerialization.data(withJSONObject: loginData, options: [])
-            request.httpBody = loginJson
-        } catch {
-            print("Error: cannot create JSON from Member data")
-            return
-        }
-        
-        exec(request: request, session: session)
-        addressText.text = addressField.text
-        addressField.text = nil
-    }
     @IBAction func changeNuber(_ sender: Any) {
         var endpoint : String = "https://d1jq46p2xy7y8u.cloudfront.net/member/update"
         let url = URL(string: endpoint)
