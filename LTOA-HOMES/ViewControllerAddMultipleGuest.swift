@@ -80,6 +80,7 @@ class ViewControllerAddMultipleGuest: UIViewController, UITextFieldDelegate, UIT
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let ViewControllerMain = segue.destination as? ViewControllerMain {
             ViewControllerMain.Name = loginName
+            ViewControllerMain.Address = address
         }
         
         if let ViewControllerGuests = segue.destination as? ViewControllerGuests {

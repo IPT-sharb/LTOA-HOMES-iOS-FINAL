@@ -1191,14 +1191,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allow Entry Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96I-NA-5uj">
-                                <rect key="frame" x="50" y="311" width="128" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allow End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-Fh-eZK">
-                                <rect key="frame" x="50" y="407" width="117" height="21"/>
+                                <rect key="frame" x="39" y="323" width="128" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -1207,16 +1200,19 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IdS-Y1-fNH">
                                 <rect key="frame" x="262" y="255" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="permanentButtonAction:" destination="IzH-BK-SIz" eventType="valueChanged" id="cfr-pk-Zu8"/>
+                                </connections>
                             </switch>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qRi-CX-5rT">
-                                <rect key="frame" x="52" y="340" width="270" height="59"/>
+                                <rect key="frame" x="39" y="340" width="314" height="59"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="577680473.57187605">
                                     <!--2019-04-23 02:47:53 +0000-->
                                 </date>
                             </datePicker>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="u7L-53-y6Y">
-                                <rect key="frame" x="50" y="453" width="270" height="59"/>
+                                <rect key="frame" x="39" y="453" width="314" height="59"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="577680473.57187605">
                                     <!--2019-04-23 02:47:53 +0000-->
@@ -1233,12 +1229,35 @@
                                     <action selector="submitAddGuest:" destination="IzH-BK-SIz" eventType="touchUpInside" id="CBd-np-MzL"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3p-KS-Bs1">
+                                <rect key="frame" x="325" y="260" width="28" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0q-0x-C8z">
+                                <rect key="frame" x="226" y="260" width="22" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Allow End Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVp-Fh-eZK">
+                                <rect key="frame" x="39" y="431" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
+                        <outlet property="allowEndLabel" destination="mVp-Fh-eZK" id="gmh-bL-hgo"/>
                         <outlet property="allowEndTime" destination="u7L-53-y6Y" id="GJj-Wn-gaY"/>
+                        <outlet property="allowStartLabel" destination="96I-NA-5uj" id="0wl-Im-oV3"/>
                         <outlet property="allowTime" destination="qRi-CX-5rT" id="336-Wa-hpO"/>
                         <outlet property="guestNameText" destination="yCK-9K-vEW" id="nag-4V-umV"/>
                         <outlet property="guestReasonText" destination="O5h-7A-eKg" id="Xwb-ts-Px9"/>
@@ -1258,9 +1277,9 @@
         <image name="LTOA-logo-small" width="250" height="142"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YZD-fn-pch"/>
+        <segue reference="r2Z-vr-LhV"/>
         <segue reference="rGK-R4-1Kj"/>
-        <segue reference="bBG-qT-aov"/>
-        <segue reference="gI1-c5-KbP"/>
+        <segue reference="Dpz-Nd-vuC"/>
+        <segue reference="I14-VC-0cj"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -91,6 +91,7 @@ class ViewControllerSubmitWorkOrder: UIViewController, UITextFieldDelegate,UIPic
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let ViewControllerMain = segue.destination as? ViewControllerMain {
             ViewControllerMain.Name = loginName
+            ViewControllerMain.Address = address
         }
         if let ViewControllerWorkOrders = segue.destination as? ViewControllerWorkOrders {
             ViewControllerWorkOrders.loginName = loginName

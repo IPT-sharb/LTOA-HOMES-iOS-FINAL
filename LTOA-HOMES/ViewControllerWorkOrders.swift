@@ -107,6 +107,7 @@ class ViewControllerWorkOrders: UIViewController, UITableViewDelegate, UITableVi
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let ViewControllerMain = segue.destination as? ViewControllerMain {
             ViewControllerMain.Name = loginName
+            ViewControllerMain.Address = address
         }
         if let ViewControllerSubmitWorkOrder = segue.destination as? ViewControllerSubmitWorkOrder {
             ViewControllerSubmitWorkOrder.loginName = loginName

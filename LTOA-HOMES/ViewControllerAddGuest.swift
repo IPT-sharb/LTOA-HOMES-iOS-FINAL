@@ -10,6 +10,10 @@ import UIKit
 
 class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var allowStartLabel: UILabel!
+    
+    @IBOutlet weak var allowEndLabel: UILabel!
+    
     var loginName: String?
     var address: String?
     
@@ -33,7 +37,27 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
+       
         self.view.endEditing(true)
+    }
+    
+    @IBAction func permanentButtonAction(_ sender: Any) {
+        
+        if(!permanentGuest.isOn)
+        {
+            allowTime.isHidden = true
+            allowStartLabel.isHidden = true
+            allowEndLabel.isHidden = true
+            allowEndTime.isHidden = true
+        }
+        if(permanentGuest.isOn)
+        {
+            allowStartLabel.isHidden = false
+            allowTime.isHidden = false
+            allowEndLabel.isHidden = false
+            allowEndTime.isHidden = false
+        }
+        
     }
     
     @IBAction func homeAddGuest(_ sender: Any) {
@@ -90,6 +114,7 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let ViewControllerMain = segue.destination as? ViewControllerMain {
             ViewControllerMain.Name = loginName
+            ViewControllerMain.Address = address
         }
     
     if let ViewControllerGuests = segue.destination as? ViewControllerGuests {
