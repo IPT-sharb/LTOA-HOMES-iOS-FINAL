@@ -80,9 +80,12 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
         {
             return false;
         }
+        if(dateEntry == "Permanent")
+        {
+            return false;
+        }
             
         oldDate = formatter.date(from: dateEntry)!
-        
         let testInt = date?.compare(oldDate).rawValue
         
         if( testInt != -1)
@@ -193,7 +196,7 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
         tempGuestName = guestList[(indexPath.row)]
         
         alertController.addAction(UIAlertAction(title: "Reapprove", style: .default, handler: updateGuest ) )
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: .default) )
+        alertController.addAction(UIAlertAction(title: "Back", style: .default) )
                                   
         self.present(alertController, animated: true, completion: nil)
         

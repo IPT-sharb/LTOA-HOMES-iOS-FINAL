@@ -32,6 +32,7 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        permanentGuest.isOn = false
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "trueBG.png")!)
     }
     
@@ -67,13 +68,27 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
     @IBAction func submitAddGuest(_ sender: Any) {
         if(permanentGuest.isOn)
         {
-            allowTimeString = "Permanent"
-            allowEndString = "Permanent"
+            let formatter = DateFormatter()
+            let calendar = Calendar.current
+            formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+            var date = Date()
+            var oldDate = Date()
+            var dateComponents = DateComponents()
+            dateComponents.year = Calendar.current.component(.year, from: date)+1
+            dateComponents.month = Calendar.current.component(.month, from: date)
+            dateComponents.day = Calendar.current.component(.day, from: date)
+            dateComponents.timeZone = NSTimeZone.local
+            date = calendar.date(from: dateComponents)!
+            let tempAllowTimeString = formatter.string(from: oldDate)
+            let tempAllowEndString = formatter.string(from: date)
+            
+            allowTimeString = tempAllowTimeString
+            allowEndString = tempAllowEndString
         }
         else
         {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMM yyyy HH:mm"
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
         allowTimeString = formatter.string(from: allowTime.date)
         allowEndString = formatter.string(from: allowEndTime.date)
         }
