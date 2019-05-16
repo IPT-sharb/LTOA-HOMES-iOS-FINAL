@@ -43,14 +43,14 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
     
     @IBAction func permanentButtonAction(_ sender: Any) {
         
-        if(!permanentGuest.isOn)
+        if(permanentGuest.isOn)
         {
             allowTime.isHidden = true
             allowStartLabel.isHidden = true
             allowEndLabel.isHidden = true
             allowEndTime.isHidden = true
         }
-        if(permanentGuest.isOn)
+        if(!permanentGuest.isOn)
         {
             allowStartLabel.isHidden = false
             allowTime.isHidden = false
@@ -85,7 +85,7 @@ class ViewControllerAddGuest: UIViewController, UITextFieldDelegate {
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/text; charset=utf-8", forHTTPHeaderField: "Accept")
         request.httpMethod = "POST"
-        let loginData: [String?: Any] = ["guestName": self.guestNameText.text, "reason": self.guestReasonText.text, "residentAddress": self.address]
+        let loginData: [String?: Any] = ["guestName": self.guestNameText.text, "reason": self.guestReasonText.text, "residentAddress": self.address, "allowedStartTime": allowTimeString, "allowedEndTime": allowEndString]
         let loginJson: Data
         do {
             loginJson = try JSONSerialization.data(withJSONObject: loginData, options: [])

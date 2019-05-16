@@ -37,6 +37,8 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
         self.guestTableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         guestTableView.dataSource = self
         self.loadData()
+        
+        var counter = 0
     }
     
     func loadData()
@@ -51,6 +53,8 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = self.guestTableView.dequeueReusableCell(withIdentifier: "cell") as! UITableViewCell
         
+        cell.textLabel?.text = self.guestList[indexPath.row]
+        
         if(checkIfAllowed(dateEntry: guestDates[(indexPath.row)]))
         {
             cell.textLabel?.backgroundColor = UIColor.gray
@@ -59,7 +63,7 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
             cell.textLabel?.backgroundColor = UIColor.red
         }
         
-        cell.textLabel?.text = self.guestList[indexPath.row]
+        
         return cell
     }
     
@@ -67,25 +71,43 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
     {
         let calendar = Calendar.current
         let year_month_day = calendar.dateComponents([.year,.month,.day], from: Date())
-        let dateArray = dateEntry.components(separatedBy: "/")
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
+        var date = calendar.date(from: year_month_day)
+        var oldDate = Date()
+        
         if(dateEntry == "null")
         {
             return false;
         }
-        if((calendar.component(.year, from: Date())) < Int(dateArray[0]) ?? 0)
+            
+        oldDate = formatter.date(from: dateEntry)!
+        
+        let testInt = date?.compare(oldDate).rawValue
+        
+        if( testInt != -1)
         {
+            print(testInt)
             return false;
         }
-        if((calendar.component(.month, from: Date())) < Int(dateArray[1]) ?? 0)
-        {
-            return false;
-        }
-        if((calendar.component(.day, from: Date())) < Int(dateArray[2]) ?? 0)
-        {
-            return false;
-        }
-       
+        
+       print("test")
         return true;
+        
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    //   guestTableView.delegate = self
+        
+        if(checkIfAllowed(dateEntry: guestDates[(indexPath.row)]))
+        {
+            cell.textLabel?.backgroundColor = UIColor.gray
+        }
+        else{
+            cell.textLabel?.backgroundColor = UIColor.red
+        }
+        
+    //    self.guestTableView.reloadRows(at: [indexPath], with: .top)
         
     }
     
@@ -99,6 +121,8 @@ class ViewControllerGuests: UIViewController, UITableViewDelegate, UITableViewDa
         var oldDate = Date()
         var dateComponents = DateComponents()
         dateComponents.year = Calendar.current.component(.year, from: date)+1
+        dateComponents.month = Calendar.current.component(.month, from: date)
+        dateComponents.day = Calendar.current.component(.day, from: date)
         dateComponents.timeZone = NSTimeZone.local
         date = calendar.date(from: dateComponents)!
         tempAllowTimeString = formatter.string(from: oldDate)
